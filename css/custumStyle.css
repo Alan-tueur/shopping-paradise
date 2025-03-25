@@ -1,0 +1,14 @@
+﻿.banner {
+    height: 50vh;
+    background-size: cover;
+    background-image: url("img/produits/banner-home.jpg"); 
+    background-repeat: no-repeat; 
+
+}
+.banner h1 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.carousel-item img {
+    height: 245px;
+}

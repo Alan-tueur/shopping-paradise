@@ -1,0 +1,179 @@
+﻿[
+    {
+      "idProduit": "prod-1",
+      "category": "T-shirts",
+      "variant": [
+        {
+          "idVariante": "prod-1-v1",
+          "cover": "img/produits/prod-1-v1.jpg",
+          "price": 12000
+        },
+        {
+          "idVariante": "prod-1-v2",
+          "cover": "img/produits/prod-1-v2.jpg",
+          "price": 15000
+        },
+        {
+          "idVariante": "prod-1-v3",
+          "cover": "img/produits/prod-1-v3.jpg",
+          "price": 18000
+        }
+      ],
+      "description": "T-shirt confortable en coton biologique, parfait pour toutes les occasions."
+    },
+    {
+      "idProduit": "prod-2",
+      "category": "Sacs",
+      "variant": [
+        {
+          "idVariante": "prod-2-v1",
+          "cover": "img/produits/prod-2-v1.jpg",
+          "price": 25000
+        },
+        {
+          "idVariante": "prod-2-v2",
+          "cover": "img/produits/prod-2-v2.jpg",
+          "price": 28000
+        },
+        {
+          "idVariante": "prod-2-v3",
+          "cover": "img/produits/prod-1-v4.jpg",
+          "price": 32000
+        }
+      ],
+      "description": "Sac à main élégant pour vos soirées, avec finitions de qualité."
+    },
+    {
+      "idProduit": "prod-3",
+      "category": "Vêtements",
+      "variant": [
+        {
+          "idVariante": "prod-3-v1",
+          "cover": "img/produits/prod-3-v1.jpg",
+          "price": 22000
+        },
+        {
+          "idVariante": "prod-3-v2",
+          "cover": "img/produits/prod-3-v2.jpg",
+          "price": 25000
+        },
+        {
+          "idVariante": "prod-3-v3",
+          "cover": "img/produits/prod-3-v3.jpg",
+          "price": 28000
+        }
+      ],
+      "description": "Vêtement tendance pour homme, coupe moderne et tissu respirant."
+    },
+    {
+      "idProduit": "prod-4",
+      "category": "Accessoires",
+      "variant": [
+        {
+          "idVariante": "prod-4-v1",
+          "cover": "img/produits/prod-4-v1.jpg",
+          "price": 8000
+        },
+        {
+          "idVariante": "prod-4-v2",
+          "cover": "img/produits/prod-4-v2.jpg",
+          "price": 10000
+        },
+        {
+          "idVariante": "prod-4-v3",
+          "cover": "img/produits/prod-5-v3.jpg",
+          "price": 12000
+        }
+      ],
+      "description": "Accessoire tendance pour compléter votre tenue avec style."
+    },
+    {
+      "idProduit": "prod-5",
+      "category": "Beauté",
+      "variant": [
+        {
+          "idVariante": "prod-5-v1",
+          "cover": "img/produits/prod-5-v1.jpg",
+          "price": 15000
+        },
+        {
+          "idVariante": "prod-5-v2",
+          "cover": "img/produits/prod-5-v2.jpg",
+          "price": 18000
+        },
+        {
+          "idVariante": "prod-5-v3",
+          "cover": "img/produits/prod-5-v3.jpg",
+          "price": 20000
+        }
+      ],
+      "description": "Produit de beauté haute qualité pour prendre soin de votre peau."
+    },
+    {
+      "idProduit": "prod-6",
+      "category": "Mode",
+      "variant": [
+        {
+          "idVariante": "prod-6-v1",
+          "cover": "img/produits/prod-6-v1.jpg",
+          "price": 35000
+        },
+        {
+          "idVariante": "prod-6-v2",
+          "cover": "img/produits/prod-6-v2.jpg",
+          "price": 38000
+        },
+        {
+          "idVariante": "prod-6-v3",
+          "cover": "img/produits/prod-6-v3.jpg",
+          "price": 42000
+        }
+      ],
+      "description": "Article de mode exclusif, fabriqué avec les meilleurs matériaux."
+    },
+    {
+      "idProduit": "prod-7",
+      "category": "Chaussures",
+      "variant": [
+        {
+          "idVariante": "prod-7-v1",
+          "cover": "img/produits/prod-7-v1.jpg",
+          "price": 45000
+        },
+        {
+          "idVariante": "prod-7-v2",
+          "cover": "img/produits/prod-7-v2.jpg",
+          "price": 48000
+        },
+        {
+          "idVariante": "prod-7-v3",
+          "cover": "img/produits/prod-3-v3.jpg",
+          "price": 52000
+        }
+      ],
+      "description": "Chaussures confortables et stylées pour toutes les occasions."
+    },
+    {
+      "idProduit": "prod-8",
+      "category": "Bijoux",
+      "variant": [
+        {
+          "idVariante": "prod-8-v1",
+          "cover": "img/produits/prod-8-v1.jpg",
+          "price": 65000
+        },
+        {
+          "idVariante": "prod-8-v2",
+          "cover": "img/produits/prod-8-v2.jpg",
+          "price": 72000
+        },
+        {
+          "idVariante": "prod-8-v3",
+          "cover": "img/produits/prod-6-v3.jpg",
+          "price": 85000
+        }
+      ],
+      "description": "Bijou élégant pour sublimer votre style au quotidien."
+    }
+]
+  

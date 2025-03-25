@@ -1,186 +1,253 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>shopstore</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+        <meta name="description" content="Découvrez notre collection complète de vêtements, accessoires et cosmétiques chez Shopping Paradise.">
+        <title>Boutique | Shopping Paradise</title>
+        
+        <!-- Styles -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/custumStyle.css">
+        
+        <!-- Préchargement des ressources critiques -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net/npm">
     </head>
     <body>
-        <!-- ========== Start header    ========== -->
-        <div class="carousel slide d-md-none"  data-bs-ride="carousel">
+        <!-- Bannière mobile -->
+        <div class="carousel slide d-md-none" data-bs-ride="carousel">
           <div class="carousel-inner text-bg-dark text-center fw-bold">
             <div class="carousel-item active py-1" data-bs-interval="5000">
               <span><i class="bi bi-bicycle mx-2"></i>livraisons rapides</span>
             </div>
             <div class="carousel-item py-1" data-bs-interval="3000">
-              <span>
-                  <i class="bi bi-shop-window mx-2"></i>retrait en magazin
-              </span>
+                <span><i class="bi bi-shop-window mx-2"></i>retrait en magasin</span>
             </div>
             <div class="carousel-item py-1" data-bs-interval="2000">
-              <span>
-                  <i class="bi bi-check2-all mx-2"></i>produits de qualite
-              </span>
+                <span><i class="bi bi-check2-all mx-2"></i>produits de qualité</span>
+              </div>
             </div>
           </div>
-      </div>
+        
       <header>
+            <!-- Bannière desktop -->
           <div class="container-fluid bg-dark mt-1 text-bg-dark py-2 d-none d-md-block">
               <div class="text-center">
                   <ul class="list-unstyled fw-bold d-flex justify-content-around m-0">
                       <li><i class="bi bi-bicycle mx-2"></i>livraisons rapides</li>
-                      <li><i class="bi bi-shop-window mx-2"></i>retrait en magazin</li>
-                      <li><i class="bi bi-check2-all mx-2"></i>produits de qualite</li>
+                        <li><i class="bi bi-shop-window mx-2"></i>retrait en magasin</li>
+                        <li><i class="bi bi-check2-all mx-2"></i>produits de qualité</li>
                   </ul>
               </div>
           </div>
+            
+            <!-- Logo -->
           <div class="container">
               <div class="text-center">
-                  <h1 class="m-5">Shopping paradise</h1>
+                    <h1 class="m-3 m-md-5">Shopping Paradise</h1>
               </div>
           </div>
-<!-- ========== Start navbar ========== -->
-          <nav class="navbar navbar-expand-sm bg-body-tertiary rounded" aria-label="Twelfth navbar example">
+            
+            <!-- Navigation desktop -->
+            <nav class="navbar navbar-expand-sm bg-body-tertiary rounded d-none d-md-block" aria-label="Navigation principale">
               <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAcceuil" aria-controls="navbarAcceuil" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAccueil" aria-controls="navbarAccueil" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
         
-                <div class="collapse navbar-collapse justify-content-center text-uppercase" id="navbarAcceuil">
+                  <div class="collapse navbar-collapse justify-content-center text-uppercase" id="navbarAccueil">
                     <ul class="navbar-nav justify-content-md-center">
                         <li class="nav-item mx-md-5">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mx-md-5">
-                      <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item mx-md-5">
-                      <a class="nav-link" aria-disabled="true" href="about.html">A bout</a>
-                  </li>
+                            <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item mx-md-5">
-                  <a class="nav-link" aria-disabled="true">contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item mx-md-5">
-                  <a class="nav-link" aria-disabled="true"><i class="bi bi-cart3"></i></a>
+                          <li class="nav-item mx-md-5 d-none d-md-block">
+                            <a class="nav-link btn position-relative p-0 me-3" aria-label="Voir le panier" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart-offcanvas" aria-controls="cart-offcanvas">
+                              <i class="bi bi-cart3 fs-1"></i>
+                              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
+                                0
+                                <span class="visually-hidden">articles dans le panier</span>
+                              </span>
+                            </a>
               </li>
           </ul>
       </div>
   </div>
 </nav>     
-<!-- ========== End navbar ========== -->
-        <!-- ========== End header  ========== -->
-    <!-- ========== Start welcome message ========== -->
-    <section>
-        <div class="container p-2 pb-lg-4">
-            <h1>Shopstore</h1>
-            <p>Bienvenue dans notre boutique en ligne Shopping Paradise! Découvrez tout un éventail de produits cosmétiques, vestimentaires et téléphoniques, classés par catégories. Faites confiance à notre expertise et commandez en toute sécurité.</p>
+            
+            <!-- Navigation mobile -->
+            <nav class="navbar navbar-light bg-light d-md-none" aria-label="Navigation mobile">
+              <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="nav-link btn position-relative p-0 me-3" aria-label="Voir le panier" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart-offcanvas" aria-controls="cart-offcanvas">
+                  <i class="bi bi-cart3 fs-1"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
+                    0
+                    <span class="visually-hidden">articles dans le panier</span>
+                  </span>
+                </a>
+                
+                <!-- Menu offcanvas -->
+                <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Shopping Paradise</h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </header>
 
-        </div>
-    </section>
-    <!-- ========== End welcome message ========== -->
-    <!-- ========== Start categorie vetements ========== -->
-    <section class="bg-light py-3">
-        <div class="container my-1 my-lg-2 my-md-4 px-4">
-            <div class="p-2 border-0 bg-white mb-4">
-                    <h1 class="m-1">vetements</h1>
+        <!-- Panier Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cart-offcanvas" aria-labelledby="cart-offcanvas-label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cart-offcanvas-label">Votre Panier</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div id="cart-empty-message" class="text-center py-5">
+              <i class="bi bi-cart3 fs-1 text-muted mb-3 d-block"></i>
+              <p>Votre panier est vide</p>
+              <a href="shop.html" class="btn btn-primary">Commencer vos achats</a>
+            </div>
+            <div id="cart-content" class="d-none">
+              <div class="cart-items-container mb-3">
+                <ul id="cart-items" class="list-group"></ul>
+              </div>
+              <div class="cart-summary border-top pt-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Sous-total:</span>
+                  <span id="cart-subtotal">0 fcfa</span>
                 </div>
-                <!-- ========== Start list vetement ========== -->
-                <div class="row row-cols-1 row-cols-sm-2 g-md-3 row-cols-md-3 row-cols-xl-4 g-2 overflow-y-scroll" style="height: 350px;">
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="img/produits/prod-5-v1.jpg" alt="prod-2-v1" class="mx-3 mt-3" style="height: 300px;">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-success">buy</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">share</button>
-                            </div>
-                            <small class="text-body-secondary">[price] fcfa</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="img/produits/prod-6-v1.jpg" alt="prod-2-v1" class="mx-3 mt-3" style="height: 300px;">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-success">buy</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">share</button>
-                            </div>
-                            <small class="text-body-secondary">[price] fcfa</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="img/produits/prod-7-v1.jpg" alt="prod-2-v1" class="mx-3 mt-3" style="height: 300px;">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-success">buy</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">share</button>
-                            </div>
-                            <small class="text-body-secondary">[price] fcfa</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="img/produits/prod-8-v1.jpg" alt="prod-2-v1" class="mx-3 mt-3" style="height: 300px;">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-success">buy</button>
-                              <button type="button" class="btn btn-sm btn-outline-secondary">share</button>
-                            </div>
-                            <small class="text-body-secondary">[price] fcfa</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- ========== End list vetement ========== -->
-                <div class="p-4 border-0 bg-white mt-4"></div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Livraison:</span>
+                  <span>2000 fcfa</span>
         </div>
-    </section>
-    <!-- ========== End categorie vetements ========== -->
-     <!-- ========== Start avant garde ========== -->
-     <section>
-        <div class="container">
+                <div class="d-flex justify-content-between fw-bold mb-3">
+                  <span>Total:</span>
+                  <span id="cart-total">0 fcfa</span>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary">Passer à la caisse</button>
+                  <button class="btn btn-outline-secondary btn-sm" id="clear-cart">Vider le panier</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+
+        <!-- Contenu principal -->
+        <main class="container py-5">
             <div class="row">
-                <div class="col-md-5">
-                    <h1>Bienvenue dans notre boutique en ligne Shopping Paradise!</h1>
-                    <p class="text-light-emphasis"><small>Découvrez notre large sélection de produits cosmétiques, vêtements et téléphones. Faites confiance à notre expertise et commandez en toute sécurité.</small></p>
+                <!-- Filtres -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Filtres</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Catégories -->
+                            <div class="mb-4">
+                                <h6 class="mb-3">Catégories</h6>
+                                <div id="category-filters" class="list-group">
+                                    <!-- Les catégories seront ajoutées dynamiquement -->
+                                </div>
+                            </div>
+
+                            <!-- Prix -->
+                            <div class="mb-4">
+                                <h6 class="mb-3">Prix</h6>
+                                <div class="d-flex gap-2">
+                                    <input type="number" class="form-control" id="min-price" placeholder="Min">
+                                    <input type="number" class="form-control" id="max-price" placeholder="Max">
+                                </div>
+                            </div>
+
+                            <!-- Boutons de filtrage -->
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" id="apply-filters">Appliquer les filtres</button>
+                                <button class="btn btn-outline-secondary" id="reset-filters">Réinitialiser</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col offset-md-1">
-                    <img src="img/produits/banniere-shop-end.jpg" alt="image of cosmetics producit" class="w-100">
+
+                <!-- Liste des produits -->
+                <div class="col-md-9">
+                    <!-- En-tête de la liste -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="mb-0">Tous nos produits</h2>
+                        <div class="d-flex align-items-center gap-2">
+                            <label for="sort-select" class="mb-0">Trier par:</label>
+                            <select class="form-select" id="sort-select">
+                                <option value="default">Par défaut</option>
+                                <option value="price-asc">Prix croissant</option>
+                                <option value="price-desc">Prix décroissant</option>
+                                <option value="name-asc">Nom (A-Z)</option>
+                                <option value="name-desc">Nom (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Grille des produits -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4" id="products-grid">
+                        <!-- Les produits seront ajoutés dynamiquement -->
+                    </div>
                 </div>
             </div>
-            <hr/>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="container py-3 my-4 border-top">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                  [logo]
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Shopping Paradise, e-com</span>
         </div>
-     </section>
-     <!-- ========== End avant garde ========== -->
-    
-     <!-- ========== Start footer ========== -->
-     <footer>
-        <div class="container py-3">
-            <p class="text-center text-lighter">© 2025 shopping paradise</p>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i><span class="visually-hidden">Twitter</span></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a></li>
+              </ul>
         </div>
      </footer>
-     <!-- ========== End footer ========== -->
-     
-        
-     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
+           
+        <!-- Scripts -->
+        <script src="js/cart.js" defer></script>
+        <script src="js/min.js" defer></script>
+        <script src="js/shop.js" defer></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
